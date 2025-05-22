@@ -1,0 +1,12 @@
+/* Asegura que el mapa tenga un tamaño visible */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 400px;  /* altura fija para que Leaflet pueda renderizar */
+    width: 100%;    /* ocupa todo el ancho disponible */
+    border: 1px solid #ccc; /* opcional, para que se note el contenedor */
+}

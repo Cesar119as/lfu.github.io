@@ -1,0 +1,11 @@
+:root {
+    --reset-margin: 0;
+    --reset-padding: 0;
+    --box-sizing: border-box;
+    --text-decoration: none;
+    --list-style: none;
+}
+
+#contacto {
+    margin-bottom: 800px; /* Ajusta este valor según la separación deseada */
+}

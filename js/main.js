@@ -18,7 +18,7 @@ fetch('/paginas/inicio.html')
     } else {
       // Carga el script si no está cargado aún
       const script = document.createElement('script');
-      script.src = '/js/carrusel.js';
+      script.src = 'js/carrusel.js';
       script.onload = () => {
         initCarrusel(); 
       }

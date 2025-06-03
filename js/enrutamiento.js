@@ -22,6 +22,32 @@ function loadContent(url) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('content').innerHTML = data;
+
+            // Inicializar funcionalidades según la página
+            if (url.toLowerCase().includes('ubicacion.html')) {
+                if (typeof inicializarMapa === 'function') {
+                    inicializarMapa();
+                } else {
+                    // Cargar mapa.js dinámicamente si no está cargado
+                    const scriptMapa = document.createElement('script');
+                    scriptMapa.src = 'js/mapa.js';
+                    scriptMapa.onload = () => inicializarMapa();
+                    document.body.appendChild(scriptMapa);
+                }
+            }
+
+            if (url.toLowerCase().includes('inicio.html')) {
+            // Cargar carrusel.js dinámicamente si no está cargado
+            if (typeof iniciarCarrucel === 'function') {
+                iniciarCarrucel(); // si ya está cargado
+            } else {
+                const scriptCarrusel = document.createElement('script');
+                scriptCarrusel.src = 'js/carrusel.js';
+                scriptCarrusel.onload = () => iniciarCarrucel(); // cuando termine de cargar
+                document.body.appendChild(scriptCarrusel);
+            }
+            }
+
         })
         .catch(error => {
             console.error('Error al cargar la página:', error);

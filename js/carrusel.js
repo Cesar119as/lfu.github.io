@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function iniciarCarrucel() {
     let currentIndex = 0;
 
     function movecarrucel(direction) {
@@ -6,10 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const totalItems = items.length;
         const carrucelInner = document.querySelector('.carrucel-inner');
 
-        if (!carrucelInner) {
-            console.error("No se encontró '.carrucel-inner'");
-            return;
-        }
+        if (!carrucelInner) return;
 
         currentIndex = (currentIndex + direction + totalItems) % totalItems;
         carrucelInner.style.transform = `translateX(${-currentIndex * 100}%)`;
@@ -18,4 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         movecarrucel(1);
     }, 4500);
-});
+
+   
+    window.movecarrucel = movecarrucel;
+}

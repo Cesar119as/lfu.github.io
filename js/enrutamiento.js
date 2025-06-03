@@ -39,11 +39,11 @@ function loadContent(url) {
             if (url.toLowerCase().includes('inicio.html')) {
             // Cargar carrusel.js dinámicamente si no está cargado
             if (typeof iniciarCarrucel === 'function') {
-                iniciarCarrucel(); // si ya está cargado
+                iniciarCarrucel(); 
             } else {
                 const scriptCarrusel = document.createElement('script');
                 scriptCarrusel.src = 'js/carrusel.js';
-                scriptCarrusel.onload = () => iniciarCarrucel(); // cuando termine de cargar
+                scriptCarrusel.onload = () => iniciarCarrucel();
                 document.body.appendChild(scriptCarrusel);
             }
             }

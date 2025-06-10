@@ -1,21 +1,20 @@
-function iniciarCarrucel() {
+function initCarrusel() {
     let currentIndex = 0;
 
-    function movecarrucel(direction) {
-        const items = document.querySelectorAll('.carrucel-item');
+    function movecarrusel(direction) {
+        const items = document.querySelectorAll('.carrusel-item');
         const totalItems = items.length;
-        const carrucelInner = document.querySelector('.carrucel-inner');
+        const carruselInner = document.querySelector('.carrusel-inner');
 
-        if (!carrucelInner) return;
+        if (!carruselInner) return;
 
         currentIndex = (currentIndex + direction + totalItems) % totalItems;
-        carrucelInner.style.transform = `translateX(${-currentIndex * 100}%)`;
+        carruselInner.style.transform = `translateX(${-currentIndex * 100}%)`;
     }
 
     setInterval(() => {
-        movecarrucel(1);
+        movecarrusel(1);
     }, 4500);
 
-   
-    window.movecarrucel = movecarrucel;
+    window.movecarrusel = movecarrusel;
 }

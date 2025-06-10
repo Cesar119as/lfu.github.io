@@ -13,7 +13,7 @@ function inicializarMapa() {
     }).addTo(map);
 
     L.marker([19.504077, -99.188429]).addTo(map)
-        .bindPopup('LABORATORIO FORMA URBANA')
+        .bindPopup('Edificio P1, Primer piso')
         .openPopup();
 
     setTimeout(() => {

@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-fetch('inicio.html')
+fetch('Inicio.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('content').innerHTML = html;

@@ -36,7 +36,7 @@ function loadContent(url) {
                 }
             }
 
-            if (url.toLowerCase().includes('inicio.html')) {
+            if (url.toLowerCase().includes('Inicio.html')) {
             // Cargar carrusel.js dinámicamente si no está cargado
             if (typeof initCarrusel === 'function') {
                 initCarrusel(); // si ya está cargado

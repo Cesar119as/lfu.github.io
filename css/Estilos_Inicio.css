@@ -6,7 +6,7 @@ section {
 }
 
 /* Carrusel */
-.carrucel {
+.carrusel {
     padding-top: 97px;
     padding-bottom: 0px;
     width: 100%;
@@ -15,17 +15,17 @@ section {
     box-sizing: border-box;
 }
 
-.carrucel-inner {
+.carrusel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.carrucel-item {
+.carrusel-item {
     min-width: 100%;
     box-sizing: border-box;
 }
 
-.carrucel-item img {
+.carrusel-item img {
     width: 100%;
     max-width: 100%;
     height: 500px;
@@ -34,7 +34,7 @@ section {
 }
 
 /* Controles del carrusel */
-.carrucel-control {
+.carrusel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -53,15 +53,15 @@ section {
     z-index: 5;
 }
 
-.carrucel-control.prev {
+.carrusel-control.prev {
     left: 20px;
 }
 
-.carrucel-control.next {
+.carrusel-control.next {
     right: 20px;
 }
 
-.carrucel-control:hover {
+.carrusel-control:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -113,11 +113,11 @@ section {
         padding: 20px 5%;
     }
 
-    .carrucel {
+    .carrusel {
         padding-top: 80px;
     }
 
-    .carrucel-item img {
+    .carrusel-item img {
         height: 300px;
     }
 

@@ -5,14 +5,14 @@ function inicializarMapa() {
         map.remove(); 
     }
 
-    map = L.map('map').setView([19.504210233596563, -99.1879535663178], 15);
+    map = L.map('map').setView([19.504077, -99.188429], 15);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19,
     }).addTo(map);
 
-    L.marker([19.504210233596563, -99.1879535663178]).addTo(map)
+    L.marker([19.504077, -99.188429]).addTo(map)
         .bindPopup('LABORATORIO FORMA URBANA')
         .openPopup();
 

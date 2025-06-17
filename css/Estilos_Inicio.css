@@ -106,26 +106,7 @@ section {
     transform: scale(1.1);
 }
 
-/* Estilos para celulares */
-@media (max-width: 600px) {
 
-    section {
-        padding: 20px 5%;
-    }
-
-    .carrusel {
-        padding-top: 80px;
-    }
-
-    .carrusel-item img {
-        height: 300px;
-    }
-
-    .gallery-container {
-        grid-template-columns: repeat(1, 1fr); /* Solo 1 columna en móvil */
-        padding: 0 10px;
-    }
-}
 
 /* Estilos para redes */
 #redes h2 {
@@ -153,3 +134,47 @@ section {
 .redes-imagenes img:hover {
     transform: scale(1.5);
 }
+
+
+
+/* Estilos para celulares */
+
+@media (max-width: 600px) {
+
+    .carrusel {
+        padding-top: 15px;
+    }
+
+    .gallery-container {
+        width: 100%;
+        margin-top: -30px;
+        grid-template-columns: repeat(2, 1fr); /* Solo 2 columnas */
+    }
+    .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #f3e2da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .gallery-item:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }    
+}
+
+
+    

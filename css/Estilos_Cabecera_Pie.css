@@ -210,6 +210,10 @@ footer {
     }
 }
 
+.submenu-toggle {
+  display: none;
+}
+
 /* Menú en celular */
 @media (max-width: 1600px) {
     .menu-toggle {
@@ -301,4 +305,23 @@ footer {
         overflow: visible !important; /* Permite que la imagen sobresalga */
     }
 
+
+    .submenu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+    }
+
+    /* Submenús ocultos por defecto */
+    .submenu {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Submenús visibles al activarse con JS */
+    .submenu.show {
+        display: flex;
+  }
 }

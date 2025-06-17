@@ -14,6 +14,13 @@
     text-decoration: var(--text-decoration);
     list-style: var(--list-style);
 }
+ul.submenu {
+    display: none;
+}
+
+ul.submenu.show {
+    display: block;
+}
 
 body {
     font-family: "Poly", serif !important;
@@ -53,7 +60,6 @@ a {
 .barra-superior .logo-item img:hover {
     transform: scale(1.1);
 }
-
 
 /* Menú principal */
 nav.navbar {
@@ -163,13 +169,14 @@ nav.navbar ul li ul.submenu li:hover > ul.submenu {
 
 /* Menú hamburguesa */
 .menu-toggle {
+    align-self: center;
     display: none !important;
     flex-direction: column !important;
     gap: 4px !important;
     cursor: pointer !important;
     position: absolute !important;
-    right: 20px !important;
-    top: 15px !important;
+    right: 25px !important;
+    top: center !important;
     z-index: 101 !important;
 }
 
@@ -178,6 +185,29 @@ nav.navbar ul li ul.submenu li:hover > ul.submenu {
     height: 4px !important;
     background-color: #ffffff !important;
     border-radius: 2px !important;
+}
+
+footer {
+    background-color: #013f55 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 100px !important;
+}
+
+/* Versión tablet */
+@media (max-width: 600px) {
+    .menu-imagen {
+        height: 30px !important;
+    }
+
+    .barra-superior .logo-item img,
+    nav.navbar .logo-item img {
+        max-height: 25px !important;
+    }
+
+    .menu-imagen {
+        height: 60px !important;
+    }
 }
 
 /* Menú en celular */
@@ -190,12 +220,11 @@ nav.navbar ul li ul.submenu li:hover > ul.submenu {
         display: flex !important;
         flex-direction: column !important;
         position: absolute !important;
-        top: 80px !important;
+        top: 70px !important;
         left: 0 !important;
         width: 100% !important;
         background-color: #013f55 !important;
         padding: 20px !important;
-        z-index: 90 !important;
         visibility: hidden !important;
         opacity: 0 !important;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out !important;
@@ -222,35 +251,54 @@ nav.navbar ul li ul.submenu li:hover > ul.submenu {
         display: flex !important;
         background-color: #013f55 !important;
     }
-}
 
-/* Footer */
-footer {
-    background-color: #013f55 !important;
-    color: white !important;
-    text-align: center !important;
-    padding: 100px !important;
-}
-
-/* Versión tablet */
-@media (max-width: 600px) {
-    .menu-imagen {
-        height: 30px !important;
+    /* Barra superior fija */
+    .barra-superior {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 0px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        height: 70px;
     }
 
-    .barra-superior .logo-item img,
+    .barra-superior .logo-item img {
+        height: 35px !important;    
+        width: auto !important;
+        max-height: none !important; 
+        object-fit: contain !important;
+        position: relative;
+        z-index: 200;
+    }
+
+    nav.navbar {
+    display: flex !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 70px !important;
+    width: 100% !important;
+    background-color: #002d3d !important;
+    height: 70px !important;
+    z-index: 99 !important;
+    padding: 0 20px !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    }
+
     nav.navbar .logo-item img {
-        max-height: 25px !important;
+    height: 70px !important;   
+    width: auto !important;
+    max-height: none !important; 
+    object-fit: contain !important;
+    position: relative;
+    z-index: 200;
     }
 
-    .menu-imagen {
-        height: 60px !important;
+    nav.navbar .logo-item {
+        overflow: visible !important; /* Permite que la imagen sobresalga */
     }
-}
 
-/* Galería responsive */
-@media (max-width: 992px) {
-    .gallery-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }

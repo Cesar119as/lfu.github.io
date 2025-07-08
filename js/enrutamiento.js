@@ -23,6 +23,29 @@ function loadContent(url) {
         .then(data => {
             document.getElementById('content').innerHTML = data;
 
+        document.querySelectorAll('.submenu-contexto').forEach(el => el.classList.remove('active'));
+
+        const lowerUrl = url.toLowerCase();
+        
+
+        if (lowerUrl.includes('inicio')) {
+            document.getElementById('submenu-inicio')?.classList.add('active');
+        } else if (lowerUrl.includes('investigacion')) {
+            document.getElementById('submenu-investigacion')?.classList.add('active');
+        } else if (lowerUrl.includes('formacion')) {
+            document.getElementById('submenu-formacion')?.classList.add('active');
+        } else if (lowerUrl.includes('divulgacion')) {
+            document.getElementById('submenu-divulgacion')?.classList.add('active');
+        } else if (lowerUrl.includes('vinculacion')) {
+            document.getElementById('submenu-vinculacion')?.classList.add('active');
+        } else if (lowerUrl.includes('servicios')) {
+            document.getElementById('submenu-servicios')?.classList.add('active');
+        } else if (lowerUrl.includes('eventos_y_noticias')) {
+            document.getElementById('submenu-eventos_y_noticias')?.classList.add('active');
+        } else if (lowerUrl.includes('transparencia')) {
+            document.getElementById('submenu-transparencia')?.classList.add('active');
+        }
+
             // Inicializar funcionalidades según la página
             if (url.toLowerCase().includes('ubicacion.html')) {
                 if (typeof inicializarMapa === 'function') {

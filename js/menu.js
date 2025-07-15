@@ -6,7 +6,7 @@ function setupMenu() {
 
     const menuItems = menu.querySelectorAll('li');
 
-    // En pantallas grandes: submenú se abre con clic en <li>
+    /* En pantallas grandes: submenú se abre con clic en <li>
     if (window.innerWidth > 1600) {
         menuItems.forEach(item => {
             const submenu = item.querySelector('ul.submenu');
@@ -26,7 +26,7 @@ function setupMenu() {
                 });
             }
         });
-    }
+    }*/
 
     // Botón de hamburguesa
     menuToggle.addEventListener("click", function () {
@@ -40,7 +40,7 @@ function setupMenu() {
         }
     });
 
-    // Cierra submenús al hacer clic en enlaces
+    /* Cierra submenús al hacer clic en enlaces
     menu.querySelectorAll('ul.submenu a').forEach(link => {
         link.addEventListener('click', function () {
             let parent = this.parentElement;
@@ -74,6 +74,6 @@ function setupMenu() {
                 menu.classList.remove('show');
             });
         });
-    }
+    }*/
 
 }

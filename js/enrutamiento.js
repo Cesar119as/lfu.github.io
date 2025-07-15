@@ -28,7 +28,7 @@ function loadContent(url) {
         const lowerUrl = url.toLowerCase();
         
 
-        if (lowerUrl.includes('inicio')) {
+        if (lowerUrl.includes('inicio') || lowerUrl.includes('que_hacemos')) {
             document.getElementById('submenu-inicio')?.classList.add('active');
         } else if (lowerUrl.includes('investigacion')) {
             document.getElementById('submenu-investigacion')?.classList.add('active');
@@ -47,7 +47,7 @@ function loadContent(url) {
         }
 
             // Inicializar funcionalidades según la página
-            if (url.toLowerCase().includes('ubicacion.html')) {
+            if (url.toLowerCase().includes('que_hacemos.html')) {
                 if (typeof inicializarMapa === 'function') {
                     inicializarMapa();
                 } else {

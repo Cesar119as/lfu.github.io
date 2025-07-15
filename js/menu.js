@@ -54,7 +54,7 @@ function setupMenu() {
         });
     });
 
-    // ✅ Solo en móviles: manejar submenús con triángulo
+    
     if (window.innerWidth <= 1600) {
         const toggles = menu.querySelectorAll('.submenu-toggle');
         toggles.forEach(toggle => {
@@ -66,7 +66,7 @@ function setupMenu() {
         });
     }
     
-    // Solo en móviles: cerrar menú al hacer clic en cualquier enlace principal
+    //cerrar menú al hacer clic en cualquier enlace principal
     if (window.innerWidth <= 1600) {
         const allLinks = menu.querySelectorAll('a');
         allLinks.forEach(link => {

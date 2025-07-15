@@ -116,7 +116,7 @@ nav.navbar > ul > li > a:hover {
     background-color: #ff8110 !important;
 }
 
-/* Submenú */
+/* Submenú 
 nav.navbar ul li ul.submenu {
     display: none !important;
     position: absolute !important;
@@ -166,7 +166,7 @@ nav.navbar ul li ul.submenu li ul.submenu {
 nav.navbar ul li ul.submenu li:hover > ul.submenu {
     display: flex !important;
 }
-
+*/
 /* Menú hamburguesa */
 .menu-toggle {
     align-self: center;

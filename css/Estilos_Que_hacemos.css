@@ -15,7 +15,8 @@ body {
 }
 
 #Nosotros {
-    padding: 150px;
+    margin-top: 200px; 
+    padding: 100px;
     line-height: 1.7; /*Sparación entre líneas */
     text-align: justify; 
 }
@@ -23,7 +24,7 @@ body {
 /* Estilo para el título */
 #Nosotros p:first-of-type {
     text-align: center; 
-    font-size: 2.5em; /* Título más grande */
+    font-size: 2.5em; 
     color: rgb(75, 131, 235);
     font-weight: bold;
     margin-bottom: 50px; /* Espacio extra después del título */
@@ -51,20 +52,31 @@ body {
    
 }
 
-
-
+#integrantes a {
+    color: rgb(47, 0, 255) !important;               /* color del texto */
+    padding: 8px 8px;           /* espacio alrededor del texto */
+    border-radius: 4px;         /* esquinas redondeadas */
+    text-decoration: none;      /* elimina subrayado */
+    display: inline-block;      /* para que el padding funcione correctamente */
+    margin: 2px 0;              /* separación vertical entre enlaces */
+}
+#integrantes a:hover {
+        background-color: #ffffff; /* color más oscuro al pasar el mouse */
+        color: #ffffff;
+}
 
 /* VERSION PARA CECULARES */
 
 @media (max-width: 600px) {
 
     body {
-        font-family: Arial, sans-serif; /* Tipo de letra */
+        font-family: Arial, sans-serif; 
         font-size: 0.9em; /* Tamaño texto */
     }
     
     #Nosotros {
-        padding: 50px;
+        margin-top: 200px; 
+        padding: 10px;
         line-height: 1.5; /*Sparación entre líneas */
         text-align: justify; 
     }
@@ -97,28 +109,26 @@ body {
         margin-bottom: 10px;
         line-height: 2;
     }
-}
 
+    #integrantes a {
 
-h1 {
-    margin-top: 150px; 
-    text-align: center;
-}
-
-#map {
-    height: 400px;   
-    width: 80%;     
-    margin-top: 20px;
-    margin: 20px auto;  
-    box-sizing: border-box;
-    border-radius: 10px; 
-    z-index: 1;         
+    color: rgb(47, 0, 255) !important;               /* color del texto */
+    padding: 8px 8px;           /* espacio alrededor del texto */
+    border-radius: 4px;         /* esquinas redondeadas */
+    text-decoration: none;      /* elimina subrayado */
+    display: inline-block;      /* para que el padding funcione correctamente */
+    margin: 2px 0;              /* separación vertical entre enlaces */
+    }
+    #integrantes a:hover {
+        background-color: #ffffff; /* color más oscuro al pasar el mouse */
+        color: #ffffff;
+    }
 }
 
 /* Estilo para el mapa */
 #map {
     height: 400px;   
-    width: 80%;     
+    width: 100%;     
     margin: 20px auto;  
     box-sizing: border-box;
     border-radius: 10px; 

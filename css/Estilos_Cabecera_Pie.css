@@ -201,11 +201,16 @@ footer {
         display: flex !important;
     }
 
+    .barra-superior .logo-item {
+    display: flex;
+    gap: 20px; /*Sepaeracion*/
+    }
+
     nav.navbar ul {
         display: flex !important;
         flex-direction: column !important;
         position: absolute !important;
-        top: 137px !important;
+        top: 150px !important;
         left: 0 !important;
         width: 100% !important;
         background-color: #013f55 !important;
@@ -251,7 +256,7 @@ footer {
     }
 
     .barra-superior .logo-item img {
-        height: 35px !important;    
+        height: 30px !important;    
         width: auto !important;
         max-height: none !important; 
         object-fit: contain !important;
@@ -297,6 +302,37 @@ footer {
         display: flex;
   }
 }
+
+@media (max-width: 600px) {
+    .barra_inferior {
+        position: fixed;
+        bottom: 0;              /* pegada abajo */
+        left: 0;
+        width: 100%;            /* ancho completo */
+        height: auto;           /* altura según contenido */
+        max-height: 75px;      /* opcional: limita altura para que no crezca demasiado */
+        padding: 8px 0;
+        display: flex;
+        flex-wrap: wrap;        /* permite varias filas si es necesario */
+        justify-content: center;
+        align-items: center;    /* centra verticalmente el contenido en cada fila */
+        background-color: #ffffff !important;
+        z-index: 100;
+            /* agrega scroll si hay demasiado contenido */
+    }
+
+    .barra_inferior .submenu-contexto {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .barra_inferior a {
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+}
+
 
 .barra_inferior {
     position: fixed;

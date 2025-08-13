@@ -5,14 +5,21 @@ section {
     overflow: hidden;
 }
 
+
 /* Carrusel */
+#carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 190px; 
+}
+
 .carrusel {
-    padding-top: 170px;
-    padding-bottom: 0px;
     width: 100%;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
+    padding: 0; 
 }
 
 .carrusel-inner {
@@ -27,10 +34,8 @@ section {
 
 .carrusel-item img {
     width: 100%;
-    max-width: 100%;
-    height: 500px;
-    object-fit: contain;
-    display: block;
+    height: 500px;  
+    object-fit: cover;
 }
 
 /* Controles del carrusel */
@@ -64,7 +69,6 @@ section {
 .carrusel-control:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 /* Galería de imágenes */
 .gallery-container {
     display: grid;
@@ -141,13 +145,9 @@ section {
 
 @media (max-width: 600px) {
 
-    .carrusel {
-        padding-top: 15px;
-    }
-
     .gallery-container {
         width: 100%;
-        margin-top: -30px;
+        margin-top: 0px;
         grid-template-columns: repeat(2, 1fr); /* Solo 2 columnas */
     }
     .gallery-item {
@@ -177,4 +177,13 @@ section {
 }
 
 
-    
+    /* Responsive para móviles */
+@media (max-width: 600px) {
+    #carrusel {
+        margin-top: 20px;
+    }
+
+    .carrusel-item img {
+        height: 250px; /* Ajusta altura para móviles */
+    }
+}

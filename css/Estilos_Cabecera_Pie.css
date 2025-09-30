@@ -52,7 +52,7 @@ a {
 }
 
 .barra-superior .logo-item img {
-    max-height: 45px;
+    max-height: 25px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -83,7 +83,7 @@ nav.navbar .logo-item {
 }
 
 nav.navbar .logo-item img {
-    max-height: 80px !important;
+    max-height: 70px !important;
     width: auto !important;
     transition: transform 0.3s ease !important;
 }
@@ -279,7 +279,7 @@ footer {
     }
 
     nav.navbar .logo-item img {
-    height: 70px !important;   
+    height: 60px !important;   
     width: auto !important;
     max-height: none !important; 
     object-fit: contain !important;
@@ -308,17 +308,16 @@ footer {
         position: fixed;
         bottom: 0;              /* pegada abajo */
         left: 0;
-        width: 100%;            /* ancho completo */
-        height: auto;           /* altura según contenido */
-        max-height: 75px;      /* opcional: limita altura para que no crezca demasiado */
-        padding: 8px 0;
+        width: 100%;            
+        height: auto;           
+        max-height: 75px;      
         display: flex;
-        flex-wrap: wrap;        /* permite varias filas si es necesario */
+        flex-wrap: wrap;        
         justify-content: center;
-        align-items: center;    /* centra verticalmente el contenido en cada fila */
+        align-items: center;    /
         background-color: #ffffff !important;
         z-index: 100;
-            /* agrega scroll si hay demasiado contenido */
+            
     }
 
     .barra_inferior .submenu-contexto {

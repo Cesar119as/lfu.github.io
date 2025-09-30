@@ -40,7 +40,7 @@ function setupMenu() {
         }
     });
 
-    /* Cierra submenús al hacer clic en enlaces
+    /* Cierra submenús al hacer clic en enlaces*/
     menu.querySelectorAll('ul.submenu a').forEach(link => {
         link.addEventListener('click', function () {
             let parent = this.parentElement;
@@ -74,6 +74,6 @@ function setupMenu() {
                 menu.classList.remove('show');
             });
         });
-    }*/
+    }
 
 }

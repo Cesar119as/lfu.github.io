@@ -69,6 +69,22 @@ section {
 .carrusel-control:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* texto del carrusel */
+#texto-carrusel {
+    max-width: 90%;
+    margin: 0 auto;   
+    padding: 20px;
+}
+
+#texto-carrusel h2 {
+    font-family: "Arial", "Helvetica", sans-serif; 
+    font-size: 20px;        
+    font-weight: normal;    
+    line-height: 1.6;       
+    text-align: justify;    
+}
+
 /* Galería de imágenes */
 .gallery-container {
     display: grid;
@@ -180,7 +196,7 @@ section {
     /* Responsive para móviles */
 @media (max-width: 600px) {
     #carrusel {
-        margin-top: 20px;
+        margin-top: 200px;
     }
 
     .carrusel-item img {

@@ -1,0 +1,99 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f7;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2a4d69;
+    }
+    .search-box {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      display: flex;
+    }
+    .search-box input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px 0 0 6px;
+      font-size: 16px;
+    }
+    .search-box button {
+      padding: 10px 20px;
+      border: none;
+      background: #2a4d69;
+      color: #fff;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+    }
+    .search-box button:hover {
+      background: #1e354a;
+    }
+    .results {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .record {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .record h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .record h2 a {
+      color: #2a4d69;
+      text-decoration: none;
+    }
+    .record h2 a:hover {
+      text-decoration: underline;
+    }
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .date { background: #2a9d8f; }
+    .dataset { background: #264653; }
+    .open { background: #2a9d8f; }
+    .meta {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .doi {
+      font-size: 13px;
+      color: #0077b6;
+      margin-bottom: 8px;
+    }
+    .stats {
+      font-size: 13px;
+      color: #777;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .orcid {
+      color: green;
+      margin-left: 4px;
+      font-size: 12px;
+    }

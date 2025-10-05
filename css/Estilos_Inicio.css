@@ -89,7 +89,7 @@ section {
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
-    gap: 15px;
+    gap: 20px;
     width: 100%;
     margin-top: 30px;
     padding: 0px 5%;
@@ -116,7 +116,7 @@ section {
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
+    height: 190px;
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -140,14 +140,14 @@ section {
     justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     padding: 0 5%;
     box-sizing: border-box;
 }
 
 .redes-imagenes img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.3s ease;
 }
 

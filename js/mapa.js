@@ -13,7 +13,7 @@ function inicializarMapa() {
     }).addTo(map);
 
     L.marker([19.504077, -99.188429]).addTo(map)
-        .bindPopup('Edificio P1, Primer piso')
+        .bindPopup('Edificio 1P Planta alta')
         .openPopup();
 
     setTimeout(() => {

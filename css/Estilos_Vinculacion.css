@@ -1,7 +1,99 @@
-#Vinculacion,
-#Laboratorios,
-#Convenios,
-#Sociedad,
-#Anuario_de_Espacios_Urbanos {
-    margin-top: 170px;
+
+#LaboratoriosCyAD {
+    margin-top: 200px;
+}
+
+#LaboratoriosCyAD a {
+  color: #003366 !important; /* Azul institucional */
+  text-decoration: underline;
+}
+
+#LaboratoriosCyAD a:hover {
+  color: #d43f3a !important; /* Rojo CyAD en hover */
+  text-decoration: none;
+}
+
+.laboratorios {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 30px;
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #222;
+}
+
+.intro-labs p {
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.laboratorios h2 {
+  color: #003366;
+  font-size: 1.9rem;
+  border-bottom: 2px solid #d43f3a;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.galeria-labs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+.lab {
+  text-decoration: none;
+  color: #222;
+  width: 140px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.lab img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.lab p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.lab:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+.enlace-labs a {
+  color: #003366;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+.nota {
+  color: #cc0000;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .galeria-labs {
+    gap: 25px;
+  }
+  .lab {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lab {
+    width: 80%;
+  }
 }

@@ -1,5 +1,63 @@
-#Transparencia,
-#Informes,
-#Ley_de_transparencia_y_datos_personales {
-    margin-top: 170px;
+#Transparencia {
+  margin-top: 180px;
+}
+
+.contenido-investigacion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.08rem;
+  color: #222;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.contenido-investigacion h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 25px;
+  font-size: 1.9rem;
+  border-bottom: 2px solid #003366;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contenido-investigacion h3 {
+  color: #004c80;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  border-left: 4px solid #004c80;
+  padding-left: 10px;
+}
+
+.contenido-investigacion p {
+  margin-bottom: 20px;
+}
+
+/* --- Enlaces dentro del texto (por si se agregan más adelante) --- */
+.contenido-investigacion a {
+  color: #004c80 !important;
+  text-decoration: underline;
+}
+
+.contenido-investigacion a:hover {
+  color: #0066cc !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .contenido-investigacion {
+    max-width: 95%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .contenido-investigacion h2 {
+    font-size: 1.6rem;
+  }
+
+  .contenido-investigacion h3 {
+    font-size: 1.3rem;
+  }
 }

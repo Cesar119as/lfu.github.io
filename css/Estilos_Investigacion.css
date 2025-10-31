@@ -1,5 +1,50 @@
-#Investigacion,
-#Lineas_de_investigacion,
-#Investigaciones {
-    margin-top: 170px;
+#Investigacion{
+    margin-top: 180px;
+}
+
+
+.contenido-investigacion {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 25px 40px; 
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #222;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.contenido-investigacion h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #003366;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contenido-investigacion h3 {
+  color: #004c80;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  border-left: 4px solid #004c80;
+  padding-left: 10px;
+}
+
+.contenido-investigacion h4 {
+  color: #005599;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.contenido-investigacion ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contenido-investigacion li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  text-indent: -15px;
 }

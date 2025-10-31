@@ -1,5 +1,5 @@
 #ServiciosInvestigacion {
-  margin-top: 180px; /* Aumentado de 120px a 180px */
+  margin-top: 180px; 
 }
 .contenido-investigacion {
   max-width: 1200px;
@@ -40,7 +40,7 @@
   margin-bottom: 20px;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .contenido-investigacion {
     max-width: 95%;

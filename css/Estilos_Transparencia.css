@@ -35,7 +35,7 @@
   margin-bottom: 20px;
 }
 
-/* --- Enlaces dentro del texto (por si se agregan más adelante) --- */
+
 .contenido-investigacion a {
   color: #004c80 !important;
   text-decoration: underline;
@@ -45,7 +45,7 @@
   color: #0066cc !important;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .contenido-investigacion {
     max-width: 95%;

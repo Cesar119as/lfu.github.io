@@ -1,6 +1,7 @@
 #ServiciosInvestigacion {
   margin-top: 180px; 
 }
+
 .contenido-investigacion {
   max-width: 1200px;
   margin: 0 auto;
@@ -40,7 +41,7 @@
   margin-bottom: 20px;
 }
 
-
+/* Ventana Celular */
 @media (max-width: 768px) {
   .contenido-investigacion {
     max-width: 95%;

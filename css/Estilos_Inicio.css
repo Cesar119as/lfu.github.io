@@ -1,12 +1,9 @@
-/* Secciones */
 section {
     padding: 30px 5%;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-
-/* Carrusel */
 #carrusel {
     position: relative;
     width: 100%;
@@ -38,7 +35,6 @@ section {
     object-fit: cover;
 }
 
-/* Controles del carrusel */
 .carrusel-control {
     position: absolute;
     top: 50%;
@@ -70,7 +66,6 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* texto del carrusel */
 #texto-carrusel {
     max-width: 90%;
     margin: 0 auto;   
@@ -126,8 +121,6 @@ section {
     transform: scale(1.1);
 }
 
-
-
 /* Estilos para redes */
 #redes h2 {
     text-align: center;
@@ -157,14 +150,14 @@ section {
 
 
 
-/* Estilos para celulares */
+/* Ventana Celular */
 
 @media (max-width: 600px) {
 
     .gallery-container {
         width: 100%;
         margin-top: 0px;
-        grid-template-columns: repeat(2, 1fr); /* Solo 2 columnas */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .gallery-item {
     overflow: hidden;
@@ -192,14 +185,12 @@ section {
     }    
 }
 
-
-    /* Responsive para móviles */
 @media (max-width: 600px) {
     #carrusel {
         margin-top: 200px;
     }
 
     .carrusel-item img {
-        height: 250px; /* Ajusta altura para móviles */
+        height: 250px; 
     }
 }

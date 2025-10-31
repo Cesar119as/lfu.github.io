@@ -71,7 +71,7 @@
         contenedor.appendChild(div);
       });
     }
-
+    
     function buscar() {
       const texto = document.getElementById("search").value.toLowerCase();
       const filtrados = registros.filter(r =>

@@ -1,15 +1,14 @@
-
 #LaboratoriosCyAD {
     margin-top: 200px;
 }
 
 #LaboratoriosCyAD a {
-  color: #003366 !important; /* Azul institucional */
+  color: #003366 !important; 
   text-decoration: underline;
 }
 
 #LaboratoriosCyAD a:hover {
-  color: #d43f3a !important; /* Rojo CyAD en hover */
+  color: #d43f3a !important; 
   text-decoration: none;
 }
 
@@ -82,7 +81,7 @@
   margin-top: 10px;
 }
 
-/* === Responsive === */
+/* Ventana Celular */
 @media (max-width: 768px) {
   .galeria-labs {
     gap: 25px;

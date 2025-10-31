@@ -4,7 +4,7 @@ function inicializarMapa() {
     if (map) {
         map.remove(); 
     }
-
+    
     map = L.map('map').setView([19.504077, -99.188429], 15);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

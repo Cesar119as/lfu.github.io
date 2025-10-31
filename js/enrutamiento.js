@@ -17,16 +17,12 @@ function loadContent(url) {
     if (url.startsWith('#')) {
         url = url.slice(1);
     }
-
     fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById('content').innerHTML = data;
-
-        document.querySelectorAll('.submenu-contexto').forEach(el => el.classList.remove('active'));
-
+            document.querySelectorAll('.submenu-contexto').forEach(el => el.classList.remove('active'));
         const lowerUrl = url.toLowerCase();
-        
 
         if (lowerUrl.includes('inicio') || lowerUrl.includes('que_hacemos')) {
             document.getElementById('submenu-inicio')?.classList.add('active');
@@ -45,7 +41,6 @@ function loadContent(url) {
         } else if (lowerUrl.includes('transparencia')) {
             document.getElementById('submenu-transparencia')?.classList.add('active');
         }
-
             // Inicializar funcionalidades según la página
             if (url.toLowerCase().includes('que_hacemos.html')) {
                 if (typeof inicializarMapa === 'function') {
@@ -58,7 +53,6 @@ function loadContent(url) {
                     document.body.appendChild(scriptMapa);
                 }
             }
-
             if (url.toLowerCase().includes('Inicio.html')) {
             // Cargar carrusel.js dinámicamente si no está cargado
             if (typeof initCarrusel === 'function') {
@@ -70,7 +64,6 @@ function loadContent(url) {
                 document.body.appendChild(scriptCarrusel);
             }
             }
-
         })
         .catch(error => {
             console.error('Error al cargar la página:', error);

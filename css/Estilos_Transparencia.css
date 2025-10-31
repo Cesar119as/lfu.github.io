@@ -35,7 +35,6 @@
   margin-bottom: 20px;
 }
 
-
 .contenido-investigacion a {
   color: #004c80 !important;
   text-decoration: underline;
@@ -44,7 +43,6 @@
 .contenido-investigacion a:hover {
   color: #0066cc !important;
 }
-
 
 @media (max-width: 768px) {
   .contenido-investigacion {

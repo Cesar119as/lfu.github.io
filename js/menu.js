@@ -6,7 +6,7 @@ function setupMenu() {
 
     const menuItems = menu.querySelectorAll('li');
 
-    /* En pantallas grandes: submenú se abre con clic en <li>
+    /* En pantallas grandes submenú se abre con clic en <li>
     if (window.innerWidth > 1600) {
         menuItems.forEach(item => {
             const submenu = item.querySelector('ul.submenu');
@@ -33,7 +33,7 @@ function setupMenu() {
         menu.classList.toggle("show");
     });
 
-    // Cierra menú al hacer clic fuera
+    // Cierra menú al hacer clic 
     document.addEventListener("click", function (event) {
         if (!event.target.closest("#menu") && !event.target.closest("#menu-toggle")) {
             menu.classList.remove("show");
@@ -53,8 +53,7 @@ function setupMenu() {
             menu.classList.remove("show");
         });
     });
-
-    
+ 
     if (window.innerWidth <= 1600) {
         const toggles = menu.querySelectorAll('.submenu-toggle');
         toggles.forEach(toggle => {
@@ -66,7 +65,7 @@ function setupMenu() {
         });
     }
     
-    //cerrar menú al hacer clic en cualquier enlace principal
+    //Cerrar menú al hacer clic en cualquier enlace 
     if (window.innerWidth <= 1600) {
         const allLinks = menu.querySelectorAll('a');
         allLinks.forEach(link => {

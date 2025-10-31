@@ -6,7 +6,6 @@
     --list-style: none;
 }
 
-/* Reset de estilos */
 * {
     margin: var(--reset-margin);
     padding: var(--reset-padding);
@@ -48,7 +47,7 @@ a {
 
 .barra-superior .logo-item {
     display: flex;
-    gap: 40px; /*Sepaeracion*/
+    gap: 40px; 
 }
 
 .barra-superior .logo-item img {
@@ -116,58 +115,6 @@ nav.navbar > ul > li > a:hover {
     background-color: #ff8110 !important;
 }
 
-/* Submenú 
-nav.navbar ul li ul.submenu {
-    display: none !important;
-    position: absolute !important;
-    background-color: #002d3d !important;
-    top: 150% !important;
-    left: -25px !important;
-    min-width: 150px !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    padding: 10px 20px !important;
-    z-index: 15 !important;
-}
-
-nav.navbar ul li:hover ul.submenu {
-    display: flex !important;
-}
-
-nav.navbar ul li ul.submenu li {
-    width: 100% !important;
-}
-
-nav.navbar ul li ul.submenu li a {
-    display: block !important;
-    text-align: center !important;
-    padding: 10px !important;
-}
-
-nav.navbar ul li ul.submenu li a:hover {
-    background-color: #ff8110 !important;
-}
-
-nav.navbar ul li ul.submenu li {
-    position: relative !important;
-}
-
-nav.navbar ul li ul.submenu li ul.submenu {
-    position: absolute !important;
-    top: 0 !important;
-    left: 100% !important;
-    margin-left: -1px !important;
-    min-width: 150px !important;
-    padding: 10px 0 !important;
-    flex-direction: column !important;
-    display: none !important;
-}
-
-nav.navbar ul li ul.submenu li:hover > ul.submenu {
-    display: flex !important;
-}
-*/
-/* Menú hamburguesa */
 .menu-toggle {
     align-self: center;
     display: none !important;
@@ -194,7 +141,6 @@ footer {
     padding: 100px !important;
 }
 
-
 /* Menú en celular */
 @media (max-width: 1600px) {
     .menu-toggle {
@@ -203,7 +149,7 @@ footer {
 
     .barra-superior .logo-item {
     display: flex;
-    gap: 20px; /*Sepaeracion*/
+    gap: 20px; 
     }
 
     nav.navbar ul {
@@ -288,10 +234,9 @@ footer {
     }
 
     nav.navbar .logo-item {
-        overflow: visible !important; /* Permite que la imagen sobresalga */
+        overflow: visible !important; 
     }
 
-    /* Submenús ocultos por defecto */
     .submenu {
         display: none;
         flex-direction: column;
@@ -303,10 +248,11 @@ footer {
   }
 }
 
+/* Ventana Celular */
 @media (max-width: 600px) {
     .barra_inferior {
         position: fixed;
-        bottom: 0;              /* pegada abajo */
+        bottom: 0;              
         left: 0;
         width: 100%;            
         height: auto;           
@@ -331,7 +277,6 @@ footer {
         white-space: nowrap;
     }
 }
-
 
 .barra_inferior {
     position: fixed;
@@ -359,10 +304,10 @@ footer {
 
 .relleno-blanco {
     position: fixed;
-    top: 135px; /* justo debajo de nav.navbar */
+    top: 135px; 
     left: 0;
     width: 100%;
-    height: 15px; /* altura del hueco */
+    height: 15px; 
     background-color: white;
-    z-index: 98; /* por debajo del menú pero encima del contenido */
+    z-index: 98; 
 }

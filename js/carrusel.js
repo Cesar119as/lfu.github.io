@@ -1,6 +1,6 @@
 function initCarrusel() {
-    let currentIndex = 0;
 
+    let currentIndex = 0;
     function movecarrusel(direction) {
         const items = document.querySelectorAll('.carrusel-item');
         const totalItems = items.length;
@@ -15,6 +15,5 @@ function initCarrusel() {
     setInterval(() => {
         movecarrusel(1);
     }, 4500);
-
     window.movecarrusel = movecarrusel;
 }

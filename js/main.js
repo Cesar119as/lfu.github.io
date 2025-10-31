@@ -11,12 +11,11 @@ fetch('Inicio.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('content').innerHTML = html;
-
     // Si el script ya está cargado, llamar a la función init
     if (typeof initCarrusel === 'function') {
       initCarrusel();
     } else {
-      // Carga el script si no está cargado aún
+      // Carga el script 
       const script = document.createElement('script');
       script.src = 'js/carrusel.js';
       script.onload = () => {

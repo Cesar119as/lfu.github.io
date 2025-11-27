@@ -9,7 +9,7 @@ function initCarrusel() {
         if (!carruselInner) return;
 
         currentIndex = (currentIndex + direction + totalItems) % totalItems;
-        carruselInner.style.transform = `translateX(${-currentIndex * 100}%)`;
+        carruselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
     setInterval(() => {

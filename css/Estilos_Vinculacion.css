@@ -48,15 +48,16 @@
 .lab {
   text-decoration: none;
   color: #222;
-  width: 140px;
+  width: 150px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .lab img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  height: 80px;         /* mismo alto para todas */
+  width: 150px;          /* mantiene proporción */
+  object-fit: contain;  /* asegura que no se deformen */
+  display: block;
+  margin: 0 auto;       /* centra cada imagen */
 }
 
 .lab p {

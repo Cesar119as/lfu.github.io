@@ -74,17 +74,52 @@ section {
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .galeria-labs {
-    gap: 25px;
-  }
-  .lab {
-    width: 45%;
-  }
-}
+/* Celular*/
+@media screen and (max-width: 400px) {
 
-@media (max-width: 480px) {
-  .lab {
-    width: 80%;
-  }
+    section {
+        scroll-margin-top: 200px;
+    }
+
+    #vinculacion {
+        margin-top: 200px;
+    }
+
+    .laboratorios {
+        padding: 20px 16px;
+    }
+
+    .intro-labs p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .laboratorios h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        padding-bottom: 6px;
+    }
+
+    .galeria-labs {
+        gap: 20px;
+    }
+
+    .lab {
+        width: 120px;
+    }
+
+    .lab img {
+        width: 120px;
+        height: 65px;
+    }
+
+    .lab p {
+        font-size: 0.85rem;
+        margin-top: 8px;
+    }
+
+    .lab:hover {
+        transform: scale(1.03);
+    }
 }

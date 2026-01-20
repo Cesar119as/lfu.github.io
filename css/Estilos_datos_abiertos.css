@@ -39,3 +39,35 @@ section p a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+
+
+/* celular*/
+@media screen and (max-width: 400px) {
+
+    body {
+        padding: 10px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    section {
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+    section p a {
+        font-size: 1em;
+    }
+}

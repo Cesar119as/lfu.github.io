@@ -44,18 +44,36 @@
   color: #0066cc;
 }
 
-@media (max-width: 768px) {
-  .contenido-investigacion {
-    max-width: 95%;
-    padding: 20px;
-    font-size: 1rem;
-  }
+/* Celular*/
+@media screen and (max-width: 400px) {
 
-  .contenido-investigacion h2 {
-    font-size: 1.6rem;
-  }
+    section {
+        scroll-margin-top: 200px;
+    }
 
-  .contenido-investigacion h3 {
-    font-size: 1.3rem;
-  }
+    #transparencia {
+        margin-top: 200px;
+    }
+
+    .contenido-investigacion {
+        padding: 20px 16px;
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .contenido-investigacion h2 {
+        font-size: 1.45rem;
+        margin-bottom: 25px;
+        padding-bottom: 6px;
+    }
+
+    .contenido-investigacion h3 {
+        font-size: 1.2rem;
+        margin: 30px 0 15px;
+        padding-left: 10px;
+    }
+
+    .contenido-investigacion p {
+        margin-bottom: 15px;
+    }
 }

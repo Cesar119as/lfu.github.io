@@ -115,3 +115,64 @@ section {
   transform: scale(1.03);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
+
+/* Celular*/
+@media screen and (max-width: 400px) {
+
+    section {
+        scroll-margin-top: 200px;
+    }
+
+    #formacion {
+        margin-top: 200px;
+    }
+
+    .contenido-investigacion {
+        padding: 20px 16px;
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .contenido-investigacion h2 {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+        padding-bottom: 6px;
+    }
+
+    .contenido-investigacion h3 {
+        font-size: 1.2rem;
+        margin: 30px 0 15px;
+        padding-left: 10px;
+    }
+
+    .contenido-investigacion h4 {
+        font-size: 1.05rem;
+        margin: 20px 0 8px;
+    }
+
+    .contenido-investigacion li {
+        margin-bottom: 12px;
+        padding-left: 20px;
+    }
+
+    .tabla-cursos {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tabla-cursos th,
+    .tabla-cursos td {
+        padding: 8px 10px;
+    }
+
+    .servicio-social {
+        gap: 15px;
+    }
+
+    .servicio-social .imagen {
+        flex: 1 1 100%;
+        border-radius: 25px;
+    }
+}

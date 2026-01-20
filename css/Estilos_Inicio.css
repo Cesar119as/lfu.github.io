@@ -89,7 +89,7 @@ section {
     text-align: justify;
 }
 
-/* Galería de imágenes */
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
@@ -130,7 +130,6 @@ section {
     transform: scale(1.1);
 }
 
-/* Estilos para redes */
 #redes h2 {
     text-align: center;
     color: #333;
@@ -157,49 +156,74 @@ section {
     transform: scale(1.5);
 }
 
+/*celular*/
+@media screen and (max-width: 400px) {
 
-
-/* Ventana Celular */
-
-@media (max-width: 600px) {
-
-    .gallery-container {
-        width: 100%;
-        margin-top: 0px;
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    .gallery-item {
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding-bottom: 15px;
-    background-color: #f3e2da;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    section {
+        padding: 20px 4%;
     }
 
-    .gallery-item:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .gallery-item img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.3s ease;
-    }    
-}
-
-@media (max-width: 600px) {
     #carrusel {
         margin-top: 200px;
     }
 
+    .carrusel-item {
+        max-height: 320px;
+    }
+
     .carrusel-item img {
-        height: 250px; 
+        max-height: 300px;
+    }
+
+    .carrusel-control {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .carrusel-control.prev {
+        left: 10px;
+    }
+
+    .carrusel-control.next {
+        right: 10px;
+    }
+
+    #texto-carrusel {
+        max-width: 100%;
+        padding: 15px 5%;
+    }
+
+    #texto-carrusel h2 {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+    }
+  
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 4%;
+    }
+
+    .gallery-item img {
+        height: 140px;
+    }
+
+    #redes h2 {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .redes-imagenes {
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .redes-imagenes img {
+        width: 45px;
+        height: 45px;
     }
 }
+

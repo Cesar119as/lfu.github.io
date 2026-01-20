@@ -115,17 +115,63 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .contenido-investigacion {
-    padding: 20px;
-    font-size: 1rem;
-  }
+/* Celular*/
+@media screen and (max-width: 400px) {
 
-  .contenido-investigacion h2 {
-    font-size: 1.6rem;
-  }
+    section {
+        scroll-margin-top: 200px;
+    }
 
-  .evento-detalle {
-    flex-direction: column;
-  }
+    #eventos-noticias {
+        margin-top: 200px;
+    }
+
+    .contenido-investigacion {
+        padding: 20px 16px;
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .contenido-investigacion h2 {
+        margin: 30px auto 25px;
+        font-size: 1.45rem;
+        padding-bottom: 6px;
+    }
+
+    .contenido-investigacion h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .contenido-investigacion li {
+        padding-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    .tabla-cursos {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .tabla-cursos th,
+    .tabla-cursos td {
+        padding: 8px 10px;
+    }
+
+    .evento-detalle {
+        gap: 20px;
+    }
+
+    .evento-imagen,
+    .evento-texto {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    .evento-texto p {
+        margin-bottom: 10px;
+    }
 }

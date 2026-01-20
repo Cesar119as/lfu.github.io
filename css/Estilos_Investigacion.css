@@ -1,11 +1,15 @@
-#Investigacion{
-    margin-top: 180px;
+section {
+    scroll-margin-top: 130px;
+}
+
+#investigacion {
+  margin-top: 180px;
 }
 
 .contenido-investigacion {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 25px 40px; 
+  padding: 25px 40px;
   text-align: justify;
   line-height: 1.8;
   font-size: 1.05rem;
@@ -16,34 +20,47 @@
 .contenido-investigacion h2 {
   text-align: center;
   color: #003366;
-  margin-bottom: 25px;
+  margin: 0 auto 35px;
   font-size: 1.8rem;
   border-bottom: 2px solid #003366;
-  display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  width: fit-content;
 }
 
 .contenido-investigacion h3 {
   color: #004c80;
-  margin-top: 30px;
+  margin: 40px 0 20px;
   font-size: 1.4rem;
   border-left: 4px solid #004c80;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .contenido-investigacion h4 {
   color: #005599;
-  margin-top: 20px;
+  margin: 25px 0 10px;
   font-size: 1.2rem;
 }
 
+.contenido-investigacion article {
+  margin-bottom: 25px;
+}
+
 .contenido-investigacion ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
+  margin-top: 15px;
 }
 
 .contenido-investigacion li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  text-indent: -15px;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.contenido-investigacion li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #003366;
+  font-weight: bold;
 }

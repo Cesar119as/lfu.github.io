@@ -1,4 +1,4 @@
-#Transparencia {
+#transparencia {
   margin-top: 180px;
 }
 
@@ -14,21 +14,21 @@
 }
 
 .contenido-investigacion h2 {
+  margin: 0 auto 35px;
   text-align: center;
   color: #003366;
-  margin-bottom: 25px;
   font-size: 1.9rem;
   border-bottom: 2px solid #003366;
-  display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  width: fit-content;
 }
 
 .contenido-investigacion h3 {
   color: #004c80;
-  margin-top: 40px;
+  margin: 40px 0 20px;
   font-size: 1.5rem;
   border-left: 4px solid #004c80;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .contenido-investigacion p {
@@ -36,12 +36,12 @@
 }
 
 .contenido-investigacion a {
-  color: #004c80 !important;
+  color: #004c80;
   text-decoration: underline;
 }
 
 .contenido-investigacion a:hover {
-  color: #0066cc !important;
+  color: #0066cc;
 }
 
 @media (max-width: 768px) {

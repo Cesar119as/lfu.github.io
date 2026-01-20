@@ -1,8 +1,12 @@
-#Nosotros {
-    margin-top: 170px;
+section {
+    scroll-margin-top: 125px;
 }
 
-#Nosotros p {
+section {
+    margin-top: 60px;
+}
+
+p {
     max-width: 1200px;
     margin: 0 auto 25px auto;
     padding: 0 40px;
@@ -13,23 +17,27 @@
     font-family: "Georgia", "Times New Roman", serif;
 }
 
-#Nosotros #titulo {
+.titulo {
     text-align: center;
     font-size: 2rem;
     color: #003366;
-    margin-bottom: 30px;
+    margin: 40px auto 30px auto;
     font-family: "Georgia", "Times New Roman", serif;
     border-bottom: 2px solid #003366;
     display: inline-block;
     padding-bottom: 8px;
 }
 
-#Nosotros .imagen {
+#nosotros {
+    margin-top: 170px;
+}
+
+#nosotros .imagen {
     max-width: 900px;
     margin: 30px auto;
 }
 
-#Nosotros .imagen img {
+#nosotros .imagen img {
     width: 100%;
     display: block;
     border-radius: 8px;
@@ -37,84 +45,17 @@
 }
 
 #integrantes {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-#integrantes h2 {
-    text-align: center;
-    color: #003366;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #003366;
-    display: inline-block;
-    padding-bottom: 6px;
-    margin: 0 auto 25px auto;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
-#integrantes p {
-    max-width: 1200px;
-    margin: 0 auto 25px auto;
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #222;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
-#uso_lfu {
-    margin-top: 40px;
-}
-
-#uso_lfu h2 {
-    text-align: center;
-    color: #003366;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #003366;
-    display: inline-block;
-    padding-bottom: 6px;
-    margin: 0 auto 25px auto;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
-#uso_lfu p {
-    max-width: 1200px;
-    margin: 0 auto 25px auto;
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #222;
-    font-family: "Georgia", "Times New Roman", serif;
+#uso-lfu {
+    margin-top: 60px;
 }
 
 #ubicacion {
-    margin-top: 50px;
+    margin-top: 70px;
     padding-bottom: 40px;
 }
-
-#ubicacion h2 {
-    text-align: center;
-    color: #003366;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #003366;
-    display: inline-block;
-    padding-bottom: 6px;
-    margin: 0 auto 25px auto;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
-#ubicacion p {
-    max-width: 1200px;
-    margin: 0 auto 25px auto;
-    padding: 0 40px;
-    text-align: justify;
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #222;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
 
 #map {
     width: 90%;
@@ -123,59 +64,30 @@
     border: 2px solid #003366;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-    z-index: 1 
+    z-index: 1;
 }
 
-
-h3 {
-    color: #004c80;
-    margin-top: 35px;
-    font-size: 1.4rem;
-    border-left: 4px solid #004c80;
-    padding-left: 12px;
-    font-family: "Georgia", "Times New Roman", serif;
+#contacto {
+    margin-top: 60px;
 }
 
-h4 {
-    color: #005599;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-family: "Georgia", "Times New Roman", serif;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    text-indent: -15px;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-#ubicacion .contacto-texto {
-    max-width: 12000px;
+.contacto-box {
+    max-width: 1200px;
     margin: 20px auto 40px auto;
-    padding: 0 40px;
-    font-size: 1.25rem;       
-    line-height: 1.9;         
-    color: #111;
-    font-family: "Georgia", "Times New Roman", serif;
-    text-align: justify;
-}
-
-#ubicacion .contacto-texto strong {
-    font-size: 1.3rem;
-    color: #003366;
-}
-
-#ubicacion .contacto-box {
     background: #f5f8fc;
     border-left: 4px solid #003366;
     padding: 20px 25px;
     border-radius: 6px;
-    margin-top: 20px;
+}
+
+.contacto-texto {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #111;
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+.contacto-texto strong {
+    font-size: 1.3rem;
+    color: #003366;
 }

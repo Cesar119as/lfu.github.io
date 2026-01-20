@@ -1,5 +1,9 @@
-#ServiciosInvestigacion {
-  margin-top: 180px; 
+section {
+    scroll-margin-top: 0px;
+}
+
+#servicios {
+  margin-top: 180px;
 }
 
 .contenido-investigacion {
@@ -16,24 +20,24 @@
 .contenido-investigacion h2 {
   text-align: center;
   color: #003366;
-  margin-bottom: 25px;
+  margin: 0 auto 35px;
   font-size: 1.9rem;
   border-bottom: 2px solid #003366;
-  display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  width: fit-content;
 }
 
 .contenido-investigacion h3 {
   color: #004c80;
-  margin-top: 40px;
+  margin: 40px 0 20px;
   font-size: 1.5rem;
   border-left: 4px solid #004c80;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .contenido-investigacion h4 {
   color: #005599;
-  margin-top: 20px;
+  margin: 25px 0 10px;
   font-size: 1.25rem;
 }
 
@@ -41,7 +45,6 @@
   margin-bottom: 20px;
 }
 
-/* Ventana Celular */
 @media (max-width: 768px) {
   .contenido-investigacion {
     max-width: 95%;

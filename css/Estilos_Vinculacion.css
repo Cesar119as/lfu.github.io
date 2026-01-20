@@ -1,20 +1,24 @@
-#LaboratoriosCyAD {
-    margin-top: 200px;
+section {
+    scroll-margin-top: 130px;
 }
 
-#LaboratoriosCyAD a {
-  color: #003366 !important; 
+#vinculacion {
+  margin-top: 200px;
+}
+
+#vinculacion a {
+  color: #003366;
   text-decoration: underline;
 }
 
-#LaboratoriosCyAD a:hover {
-  color: #d43f3a !important; 
+#vinculacion a:hover {
+  color: #d43f3a;
   text-decoration: none;
 }
 
 .laboratorios {
   max-width: 1200px;
-  margin: 120px auto;
+  margin: 0 auto;
   padding: 30px;
   text-align: center;
   font-family: "Georgia", "Times New Roman", serif;
@@ -32,9 +36,9 @@
   color: #003366;
   font-size: 1.9rem;
   border-bottom: 2px solid #d43f3a;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 40px;
+  padding-bottom: 8px;
+  margin: 0 auto 40px;
+  width: fit-content;
 }
 
 .galeria-labs {
@@ -53,11 +57,11 @@
 }
 
 .lab img {
-  height: 80px;         /* mismo alto para todas */
-  width: 150px;          /* mantiene proporción */
-  object-fit: contain;  /* asegura que no se deformen */
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto;       /* centra cada imagen */
+  margin: 0 auto;
 }
 
 .lab p {
@@ -70,19 +74,6 @@
   opacity: 0.9;
 }
 
-.enlace-labs a {
-  color: #003366;
-  font-size: 0.95rem;
-  text-decoration: underline;
-}
-
-.nota {
-  color: #cc0000;
-  font-size: 0.95rem;
-  margin-top: 10px;
-}
-
-/* Ventana Celular */
 @media (max-width: 768px) {
   .galeria-labs {
     gap: 25px;
